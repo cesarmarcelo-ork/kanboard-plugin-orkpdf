@@ -1,0 +1,105 @@
+.orkpdf-shell,.orkpdf-report-wrap{max-width:1050px;margin:10px auto;color:var(--color-primary,#26344b)}
+.orkpdf-header{display:flex;gap:16px;align-items:center;padding:22px 25px;background:#19365e;color:white;border-radius:10px;margin-bottom:20px}
+.orkpdf-header>.fa{font-size:34px}.orkpdf-header h1{margin:0;color:white}.orkpdf-header p{margin:4px 0 0;color:#d5e5ff}
+.orkpdf-panel{padding:20px;margin:14px 0;border:1px solid #d9e1ec;border-radius:10px;background:var(--color-background-primary,#fff)}
+.orkpdf-panel h2{font-size:19px;margin:0 0 14px}.orkpdf-panel label{display:inline-block;margin-right:20px}
+.orkpdf-field{display:block!important;margin:20px 0!important;font-weight:600}.orkpdf-field select,.orkpdf-field input{display:block;min-width:min(100%,380px);padding:9px;margin-top:7px}
+.orkpdf-hint{font-size:13px;color:#677486}.orkpdf-print-toolbar{margin:18px 0;display:flex;gap:10px}
+.orkpdf-sheet{box-sizing:border-box;max-width:210mm;min-height:297mm;padding:16mm;margin:0 auto;background:#fff;color:#1b2738;box-shadow:0 1px 12px #0002;font-size:11pt}
+.orkpdf-report-header{display:flex;gap:16px;align-items:center;border-bottom:2px solid #214a79;padding-bottom:12px}.orkpdf-report-header>.fa{font-size:32px;color:#214a79}.orkpdf-report-header h1{margin:4px 0;font-size:20pt}.orkpdf-report-header p{margin:0}
+.orkpdf-created{text-align:right;color:#6a7888;font-size:9pt}.orkpdf-sheet h2{font-size:16pt}.orkpdf-sheet h3{font-size:12pt;margin-top:22px}
+.orkpdf-data{width:100%;border-collapse:collapse;table-layout:fixed}.orkpdf-data th,.orkpdf-data td{border:1px solid #d7e0e8;text-align:left;padding:7px;vertical-align:top;overflow-wrap:anywhere}.orkpdf-data th{background:#f0f4fa}.orkpdf-data tbody th{width:35%}
+.orkpdf-description{white-space:normal;overflow-wrap:anywhere}.orkpdf-comment{padding:10px;margin-bottom:8px;border:1px solid #d7e0e8;break-inside:avoid}.orkpdf-comment small{float:right;color:#65748a}.orkpdf-comment p{margin-bottom:0}.orkpdf-sheet footer{margin-top:28px;border-top:1px solid #d7e0e8;padding-top:10px;color:#65748a;font-size:9pt}
+@media print{@page{size:A4 portrait;margin:0}body{background:#fff!important}.orkpdf-print-toolbar,.sidebar,.page-header,.page-footer,.header,.footer{display:none!important}.orkpdf-report-wrap{margin:0;max-width:none}.orkpdf-sheet{margin:0;max-width:none;box-shadow:none;min-height:auto;page-break-after:auto}thead{display:table-header-group}tr{break-inside:avoid}}
+
+/* OrkPdf 0.2.0-alpha: editor e prévia de layout */
+.orkpdf-shell{max-width:1400px}.orkpdf-workspace{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:16px;align-items:start}.orkpdf-config .orkpdf-panel{margin:0 0 14px}.orkpdf-preview-sticky{position:sticky;top:15px;margin:0}.orkpdf-section-title{display:flex;align-items:center;justify-content:space-between;gap:8px}.orkpdf-section-title h2{margin:0 0 12px}.orkpdf-mode-picker{display:grid;grid-template-columns:1fr 1fr;gap:10px}.orkpdf-mode-picker label{display:block;padding:12px;border:1px solid #d4deed;border-radius:8px;margin:0;cursor:pointer}.orkpdf-mode-picker small{display:block;color:#718096;margin-top:5px}.orkpdf-field{margin:12px 0!important}.orkpdf-field input,.orkpdf-field select{box-sizing:border-box;max-width:100%;width:100%}.orkpdf-link{border:0;background:none;color:#285bc0;cursor:pointer;text-decoration:underline}.orkpdf-sort-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.orkpdf-sort-field{margin:0!important;display:flex!important;gap:8px;align-items:center;background:#f8fafc;border:1px solid #dfe5ec;border-radius:7px;padding:8px;cursor:move;font-size:13px}.orkpdf-sort-field.dragging{opacity:.4}.orkpdf-sort-field>.fa{color:#98a5b6}.orkpdf-extra-fields{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.orkpdf-extra-fields label{margin:0!important}.orkpdf-choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.orkpdf-choices label{display:flex;flex-direction:column;gap:5px;margin:0}.orkpdf-choices select{padding:9px}.orkpdf-check{display:block;margin:14px 0!important}.orkpdf-preview-sheet{background:#fff;color:#293449;border:1px solid #d4deea;min-height:330px;padding:22px 18px;box-shadow:0 3px 13px #17294312}.orkpdf-preview-sheet.landscape{min-height:260px}.orkpdf-preview-sheet.compact{font-size:11px}.orkpdf-preview-head{display:flex;align-items:center;gap:10px;border-bottom:2px solid #1c4270;padding-bottom:13px}.orkpdf-preview-head>.fa{font-size:27px;color:#1c4270}.orkpdf-preview-head h3{font-size:16px;margin:4px 0}.orkpdf-preview-meta{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}.orkpdf-preview-cell{padding:7px;border:1px solid #d7dfea;margin:-1px 0 0 -1px;display:flex;flex-direction:column;gap:6px;font-size:11px;min-width:0}.orkpdf-preview-cell strong{font-size:10px;color:#68778b}.orkpdf-preview-section{padding:12px 6px;border-top:1px solid #dde4ee;margin-top:13px;font-weight:600}.orkpdf-preview-inventory{padding:14px 5px;font-weight:600}.orkpdf-preview-sheet footer{margin-top:20px;border-top:1px solid #d8e0ec;color:#718096;padding-top:10px;font-size:10px}.orkpdf-live-tag{font-size:10px;color:#65758c}.orkpdf-submit{width:100%;margin-top:10px;padding:12px}.orkpdf-preview-column .orkpdf-hint{line-height:1.5;margin:12px 0}@media(max-width:950px){.orkpdf-workspace{grid-template-columns:1fr}.orkpdf-preview-sticky{position:static}}@media(max-width:500px){.orkpdf-mode-picker,.orkpdf-sort-grid{grid-template-columns:1fr}}
+.orkpdf-compact .orkpdf-sheet{font-size:9pt}.orkpdf-compact .orkpdf-data th,.orkpdf-compact .orkpdf-data td{padding:4px}.orkpdf-landscape .orkpdf-sheet{max-width:297mm;min-height:210mm}.orkpdf-report-section{margin:15px 0}.orkpdf-report-meta{max-width:100%}
+@media print{@page{margin:12mm}.orkpdf-sheet{width:auto!important;min-height:0!important;padding:0!important;box-shadow:none!important}.orkpdf-print-toolbar{display:none!important}}
+
+
+/* 0.2.3-alpha | Uniformização dos controles do formulário (escopo OrkPdf) */
+#orkpdf-root {
+  --orkpdf-input-border: #cbd5e1;
+  --orkpdf-input-focus: #3774d4;
+  --orkpdf-input-height: 40px;
+}
+#orkpdf-root .orkpdf-config .orkpdf-field,
+#orkpdf-root .orkpdf-config .orkpdf-choices > label {
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 14px !important;
+  color: #334155;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+#orkpdf-root .orkpdf-config .orkpdf-field > input[type="text"],
+#orkpdf-root .orkpdf-config .orkpdf-field > input[type="number"],
+#orkpdf-root .orkpdf-config .orkpdf-field > select,
+#orkpdf-root .orkpdf-config .orkpdf-field > textarea,
+#orkpdf-root .orkpdf-config .orkpdf-choices > label > select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: var(--orkpdf-input-height);
+  min-height: var(--orkpdf-input-height);
+  margin: 0;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--orkpdf-input-border);
+  border-radius: 6px;
+  background: #fff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  box-shadow: none;
+  outline: none;
+}
+#orkpdf-root .orkpdf-config .orkpdf-field > textarea {
+  height: auto;
+  min-height: 96px;
+  resize: vertical;
+}
+#orkpdf-root .orkpdf-config .orkpdf-field > input::placeholder,
+#orkpdf-root .orkpdf-config .orkpdf-field > textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+#orkpdf-root .orkpdf-config .orkpdf-field > input:focus,
+#orkpdf-root .orkpdf-config .orkpdf-field > select:focus,
+#orkpdf-root .orkpdf-config .orkpdf-field > textarea:focus,
+#orkpdf-root .orkpdf-config .orkpdf-choices > label > select:focus {
+  border-color: var(--orkpdf-input-focus);
+  box-shadow: 0 0 0 3px rgba(55,116,212,.15);
+}
+#orkpdf-root .orkpdf-config input[type="number"]::-webkit-inner-spin-button,
+#orkpdf-root .orkpdf-config input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#orkpdf-root .orkpdf-config input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+#orkpdf-root .orkpdf-config .orkpdf-choices {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+}
+@media (max-width: 560px) {
+  #orkpdf-root .orkpdf-config .orkpdf-choices { grid-template-columns: 1fr; }
+}
+
+/* 0.2.4-alpha | Identidade discreta no rodapé do PDF e da prévia */
+.orkpdf-brand-footer {display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:5px 14px;}
+.orkpdf-brand-footer a {color:inherit;text-decoration:none;overflow-wrap:anywhere;}
+.orkpdf-brand-footer a:hover {text-decoration:underline;}
+@media print {.orkpdf-brand-footer a {color:inherit!important;text-decoration:none!important;}}
